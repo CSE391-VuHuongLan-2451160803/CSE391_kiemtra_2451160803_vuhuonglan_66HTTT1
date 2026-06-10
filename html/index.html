@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Quản lý Hồ sơ Chuyển đổi số</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1> Hệ thống Quản lý Hồ sơ Chuyển đổi Số</h1>
+        <p>Sở Giáo dục & Đào tạo — Ứng dụng quản lý tiến trình chuyển đổi số các trường học</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Form bên trái -->
+        <aside class="sidebar">
+
+            <h3>Thêm hồ sơ mới</h3>
+
+            <form>
+
+                <label>Tên trường</label>
+                <input type="text" placeholder="VD: Trường THPT Nguyễn Huệ">
+
+                <label>Đơn vị quản lý</label>
+                <select>
+                    <option>-- Chọn đơn vị --</option>
+                </select>
+
+                <label>Trạng thái chuyển đổi</label>
+                <select>
+                    <option>-- Chọn trạng thái --</option>
+                </select>
+
+                <label>Mô tả tiến độ</label>
+                <textarea placeholder="Mô tả tình hình chuyển đổi số..."></textarea>
+
+                <button type="submit">
+                    + Thêm hồ sơ
+                </button>
+
+            </form>
+
+        </aside>
+
+        <!-- Danh sách -->
+        <section class="content">
+
+            <div class="filter-bar">
+
+                <div class="filters">
+                    <button class="active">Tất cả</button>
+                    <button>Chưa bắt đầu</button>
+                    <button>Đang triển khai</button>
+                    <button>Hoàn thành</button>
+                </div>
+
+                <span class="count">7 hồ sơ</span>
+
+            </div>
+
+        
+            <div class="school-card completed">
+                <div class="card-header">
+                    <h4> Trường THPT Nguyễn Huệ</h4>
+                    <span class="badge success">Hoàn thành</span>
+                </div>
+
+                <p class="location">
+                    Phòng GD&ĐT TP. Thủy Lợi
+                </p>
+
+                <p>
+                    Hoàn thành chuyển đổi số toàn diện: hệ thống quản lý học tập LMS,
+                    phần mềm quản lý hành chính, chữ ký số và hạ tầng mạng Wifi công suất cao.
+                </p>
+            </div>
+
+            <div class="school-card progress">
+                <div class="card-header">
+                    <h4>Trường THCS Lê Quý Đôn</h4>
+                    <span class="badge warning">Đang triển khai</span>
+                </div>
+
+                <p class="location">
+                    Phòng GD&ĐT TP. Hải Nguyên
+                </p>
+
+                <p>
+                    Đang triển khai phần mềm quản lý học bạ điện tử và hệ thống camera giám sát lớp học.
+                    Đã hoàn thành 60%.
+                </p>
+            </div>
+
+            <div class="school-card pending">
+                <div class="card-header">
+                    <h4>Trường THPT Trần Phú</h4>
+                    <span class="badge secondary">Chưa bắt đầu</span>
+                </div>
+
+                <p class="location">
+                    Phòng GD&ĐT Q. Hồng Bàng
+                </p>
+
+                <p>
+                    Chưa bắt đầu chuyển đổi số. Đang chờ kế hoạch và nguồn kinh phí từ Sở Giáo dục.
+                </p>
+            </div>
+
+            <div class="school-card progress">
+                <div class="card-header">
+                    <h4>Trường THCS Nguyễn Tri Phương</h4>
+                    <span class="badge warning">Đang triển khai</span>
+                </div>
+
+                <p class="location">
+                    Phòng GD&ĐT TP. Thủy Lợi
+                </p>
+
+                <p>
+                    Đang triển khai hệ thống điểm danh điện tử và phần mềm quản lý thư viện.
+                </p>
+            </div>
+
+            <div class="school-card progress">
+                <div class="card-header">
+                    <h4>Trường THCS Nguyễn Tri Phương</h4>
+                    <span class="badge warning">Đang triển khai</span>
+                </div>
+
+                <p class="location">
+                    Phòng GD&ĐT TP. Thủy Lợi
+                </p>
+
+                <p>
+                    Đang triển khai hệ thống điểm danh điện tử và phần mềm quản lý thư viện.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
